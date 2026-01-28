@@ -23,11 +23,11 @@ class TestProblemSolver(unittest.TestCase):
         self.assertEqual(self.solver.reverse_string(""), "")
         self.assertEqual(self.solver.reverse_string("a"), "a")
 
-    # def test_is_positive(self):
-    #     self.assertTrue(self.solver.is_positive(5))
-    #     self.assertFalse(self.solver.is_positive(0))
-    #     self.assertFalse(self.solver.is_positive(-3))
-    #     self.assertTrue(self.solver.is_positive(1))
+    def test_is_positive(self):
+        self.assertTrue(self.solver.is_positive(5))
+        self.assertFalse(self.solver.is_positive(0))
+        self.assertFalse(self.solver.is_positive(-3))
+        self.assertTrue(self.solver.is_positive(1))
 
     # def test_find_max(self):
     #     self.assertEqual(self.solver.find_max([1, 5, 3, 9, 2]), 9)

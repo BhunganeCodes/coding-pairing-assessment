@@ -56,7 +56,7 @@ class ProblemSolver:
         Example:
             is_positive(5) -> True
         """
-        pass
+        return number > 0
 
     def find_max(self, numbers):
         """

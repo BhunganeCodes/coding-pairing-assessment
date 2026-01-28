@@ -68,7 +68,9 @@ class ProblemSolver:
         Example:
             find_max([1, 5, 3, 9, 2]) -> 9
         """
-        pass
+        if not numbers:
+            return None
+        return max(numbers)
 
     def count_occurrences(self, text, char):
         """

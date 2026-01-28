@@ -29,11 +29,11 @@ class TestProblemSolver(unittest.TestCase):
         self.assertFalse(self.solver.is_positive(-3))
         self.assertTrue(self.solver.is_positive(1))
 
-    # def test_find_max(self):
-    #     self.assertEqual(self.solver.find_max([1, 5, 3, 9, 2]), 9)
-    #     self.assertEqual(self.solver.find_max([1]), 1)
-    #     self.assertIsNone(self.solver.find_max([]))
-    #     self.assertEqual(self.solver.find_max([-1, -5, -2]), -1)
+    def test_find_max(self):
+        self.assertEqual(self.solver.find_max([1, 5, 3, 9, 2]), 9)
+        self.assertEqual(self.solver.find_max([1]), 1)
+        self.assertIsNone(self.solver.find_max([]))
+        self.assertEqual(self.solver.find_max([-1, -5, -2]), -1)
 
     # def test_count_occurrences(self):
     #     self.assertEqual(self.solver.count_occurrences("banana", "a"), 3)

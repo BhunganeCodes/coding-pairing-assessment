@@ -11,11 +11,11 @@ class TestProblemSolver(unittest.TestCase):
         self.assertEqual(self.solver.sum_even_numbers([1, 3, 5]), 0)
         self.assertEqual(self.solver.sum_even_numbers([-2, -4, 3, 6]), 6)
 
-    # def test_count_vowels(self):
-    #     self.assertEqual(self.solver.count_vowels("Hello World"), 3)
-    #     self.assertEqual(self.solver.count_vowels("AEIOU"), 5)
-    #     self.assertEqual(self.solver.count_vowels("xyz"), 0)
-    #     self.assertEqual(self.solver.count_vowels(""), 0)
+    def test_count_vowels(self):
+        self.assertEqual(self.solver.count_vowels("Hello World"), 3)
+        self.assertEqual(self.solver.count_vowels("AEIOU"), 5)
+        self.assertEqual(self.solver.count_vowels("xyz"), 0)
+        self.assertEqual(self.solver.count_vowels(""), 0)
 
     # def test_reverse_string(self):
     #     self.assertEqual(self.solver.reverse_string("hello"), "olleh")

@@ -10,7 +10,7 @@ class ProblemSolver:
         Example:
             sum_even_numbers([1, 2, 3, 4, 5, 6]) -> 12 (2 + 4 + 6)
         """
-        results = [num for num in numbers if num % 2 == 0]
+        results = [num for num in numbers if num % 2 == 0 and num > 0]
 
         return sum(results)
 
@@ -25,7 +25,13 @@ class ProblemSolver:
         Example:
             count_vowels("Hello World") -> 3
         """
-        pass
+        vowels = "aeiouAEIOU"
+        count = 0
+
+        for char in text:
+            if char in vowels:
+                count += 1
+        return count
 
 
     def reverse_string(self, text):

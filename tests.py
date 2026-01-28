@@ -35,11 +35,11 @@ class TestProblemSolver(unittest.TestCase):
         self.assertIsNone(self.solver.find_max([]))
         self.assertEqual(self.solver.find_max([-1, -5, -2]), -1)
 
-    # def test_count_occurrences(self):
-    #     self.assertEqual(self.solver.count_occurrences("banana", "a"), 3)
-    #     self.assertEqual(self.solver.count_occurrences("hello", "l"), 2)
-    #     self.assertEqual(self.solver.count_occurrences("test", "z"), 0)
-    #     self.assertEqual(self.solver.count_occurrences("", "a"), 0)
+    def test_count_occurrences(self):
+        self.assertEqual(self.solver.count_occurrences("banana", "a"), 3)
+        self.assertEqual(self.solver.count_occurrences("hello", "l"), 2)
+        self.assertEqual(self.solver.count_occurrences("test", "z"), 0)
+        self.assertEqual(self.solver.count_occurrences("", "a"), 0)
 
 
     # def test_longest_word(self):

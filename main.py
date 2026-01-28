@@ -83,7 +83,12 @@ class ProblemSolver:
         Example:
             count_occurrences("banana", "a") -> 3
         """
-        pass
+        count = 0
+
+        for item in text:
+            if item == char:
+                count += 1
+        return count
 
     # Intermediate Questions
     def longest_word(self, sentence):

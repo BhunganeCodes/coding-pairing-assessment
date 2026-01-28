@@ -17,11 +17,11 @@ class TestProblemSolver(unittest.TestCase):
         self.assertEqual(self.solver.count_vowels("xyz"), 0)
         self.assertEqual(self.solver.count_vowels(""), 0)
 
-    # def test_reverse_string(self):
-    #     self.assertEqual(self.solver.reverse_string("hello"), "olleh")
-    #     self.assertEqual(self.solver.reverse_string("Python"), "nohtyP")
-    #     self.assertEqual(self.solver.reverse_string(""), "")
-    #     self.assertEqual(self.solver.reverse_string("a"), "a")
+    def test_reverse_string(self):
+        self.assertEqual(self.solver.reverse_string("hello"), "olleh")
+        self.assertEqual(self.solver.reverse_string("Python"), "nohtyP")
+        self.assertEqual(self.solver.reverse_string(""), "")
+        self.assertEqual(self.solver.reverse_string("a"), "a")
 
     # def test_is_positive(self):
     #     self.assertTrue(self.solver.is_positive(5))

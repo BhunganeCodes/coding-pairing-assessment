@@ -44,7 +44,7 @@ class ProblemSolver:
         Example:
             reverse_string("hello") -> "olleh"
         """
-        pass
+        return text[::-1]
 
     def is_positive(self, number):
         """

@@ -45,6 +45,7 @@ class ProblemSolver:
             reverse_string("hello") -> "olleh"
         """
         return text[::-1]
+    
 
     def is_positive(self, number):
         """
@@ -57,6 +58,7 @@ class ProblemSolver:
             is_positive(5) -> True
         """
         return number > 0
+    
 
     def find_max(self, numbers):
         """
@@ -71,6 +73,7 @@ class ProblemSolver:
         if not numbers:
             return None
         return max(numbers)
+    
 
     def count_occurrences(self, text, char):
         """
@@ -102,7 +105,26 @@ class ProblemSolver:
         Example:
             longest_word("The quick brown fox jumps.") -> "quick"
         """
-        pass
+        
+        if not sentence:
+            return ""
+        
+        punctuation = "!@#$%^&*?><.,"
+        
+        sentence_list = "".join([char for char in sentence if char not in punctuation]).split()
+        longest_word = 0
+        idx = 0
+
+        for index, item in enumerate(sentence_list):
+            if item in punctuation:
+                continue
+
+            if len(item) >= longest_word:
+                longest_word = len(item)
+                idx = index
+        return sentence_list[idx]
+
+
 
     def is_palindrome(self, text):
         """

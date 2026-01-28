@@ -42,11 +42,11 @@ class TestProblemSolver(unittest.TestCase):
         self.assertEqual(self.solver.count_occurrences("", "a"), 0)
 
 
-    # def test_longest_word(self):
-    #     self.assertEqual(self.solver.longest_word("The quick brown fox jumps."), "jumps")
-    #     self.assertEqual(self.solver.longest_word(""), "")
-    #     self.assertEqual(self.solver.longest_word("Hello, world!!"), "world")
-    #     self.assertEqual(self.solver.longest_word("cat dog fox"), "fox")
+    def test_longest_word(self):
+        self.assertEqual(self.solver.longest_word("The quick brown fox jumps."), "jumps")
+        self.assertEqual(self.solver.longest_word(""), "")
+        self.assertEqual(self.solver.longest_word("Hello, world!!"), "world")
+        self.assertEqual(self.solver.longest_word("cat dog fox"), "fox")
 
     # def test_is_palindrome(self):
     #     self.assertTrue(self.solver.is_palindrome("A man, a plan, a canal: Panama"))

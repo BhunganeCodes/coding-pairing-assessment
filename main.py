@@ -353,4 +353,4 @@ class ProblemSolver:
         pass
 
 if __name__ == "__main__":
-    print(ProblemSolver().sum_even_numbers([1, 2, 3, 4, 5, 6]))
+    pass

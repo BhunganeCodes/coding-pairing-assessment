@@ -67,11 +67,11 @@ class TestProblemSolver(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.solver.factorial(-1)
 
-    # def test_capitalize_words(self):
-    #     self.assertEqual(self.solver.capitalize_words("hello world"), "Hello World")
-    #     self.assertEqual(self.solver.capitalize_words("the quick fox"), "The Quick Fox")
-    #     self.assertEqual(self.solver.capitalize_words(""), "")
-    #     self.assertEqual(self.solver.capitalize_words("a"), "A")
+    def test_capitalize_words(self):
+        self.assertEqual(self.solver.capitalize_words("hello world"), "Hello World")
+        self.assertEqual(self.solver.capitalize_words("the quick fox"), "The Quick Fox")
+        self.assertEqual(self.solver.capitalize_words(""), "")
+        self.assertEqual(self.solver.capitalize_words("a"), "A")
 
     # def test_sum_of_squares(self):
     #     self.assertEqual(self.solver.sum_of_squares([1, 2, 3]), 14)

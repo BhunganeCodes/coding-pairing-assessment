@@ -194,7 +194,7 @@ class ProblemSolver:
         Example:
             capitalize_words("hello world") -> "Hello World"
         """
-        pass
+        return sentence.title()
 
     def sum_of_squares(self, numbers):
         """

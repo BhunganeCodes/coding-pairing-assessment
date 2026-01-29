@@ -54,11 +54,11 @@ class TestProblemSolver(unittest.TestCase):
         self.assertTrue(self.solver.is_palindrome(""))
         self.assertTrue(self.solver.is_palindrome("a"))
 
-    # def test_remove_duplicates(self):
-    #     self.assertEqual(self.solver.remove_duplicates([1, 2, 2, 3, 1, 4]), [1, 2, 3, 4])
-    #     self.assertEqual(self.solver.remove_duplicates([]), [])
-    #     self.assertEqual(self.solver.remove_duplicates([1, 1, 1]), [1])
-    #     self.assertEqual(self.solver.remove_duplicates([1, 2, 3]), [1, 2, 3])
+    def test_remove_duplicates(self):
+        self.assertEqual(self.solver.remove_duplicates([1, 2, 2, 3, 1, 4]), [1, 2, 3, 4])
+        self.assertEqual(self.solver.remove_duplicates([]), [])
+        self.assertEqual(self.solver.remove_duplicates([1, 1, 1]), [1])
+        self.assertEqual(self.solver.remove_duplicates([1, 2, 3]), [1, 2, 3])
 
     # def test_factorial(self):
     #     self.assertEqual(self.solver.factorial(5), 120)

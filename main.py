@@ -154,7 +154,14 @@ class ProblemSolver:
         Example:
             remove_duplicates([1, 2, 2, 3, 1, 4]) -> [1, 2, 3, 4]
         """
-        pass
+        result = []
+
+        for num in numbers:
+            if num in result:
+                continue
+            else:
+                result.append(num)
+        return result
 
     def factorial(self, n):
         """

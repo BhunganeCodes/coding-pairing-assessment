@@ -136,7 +136,13 @@ class ProblemSolver:
         Example:
             is_palindrome("A man, a plan, a canal: Panama") -> True
         """
-        pass
+        cleaned_text = ""
+
+        for char in text.lower():
+            if char.isalpha():
+                cleaned_text += char
+        
+        return cleaned_text == cleaned_text[::-1]
 
     def remove_duplicates(self, numbers):
         """

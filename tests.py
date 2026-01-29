@@ -48,11 +48,11 @@ class TestProblemSolver(unittest.TestCase):
         self.assertEqual(self.solver.longest_word("Hello, world!!"), "world")
         self.assertEqual(self.solver.longest_word("cat dog fox"), "fox")
 
-    # def test_is_palindrome(self):
-    #     self.assertTrue(self.solver.is_palindrome("A man, a plan, a canal: Panama"))
-    #     self.assertFalse(self.solver.is_palindrome("race a car"))
-    #     self.assertTrue(self.solver.is_palindrome(""))
-    #     self.assertTrue(self.solver.is_palindrome("a"))
+    def test_is_palindrome(self):
+        self.assertTrue(self.solver.is_palindrome("A man, a plan, a canal: Panama"))
+        self.assertFalse(self.solver.is_palindrome("race a car"))
+        self.assertTrue(self.solver.is_palindrome(""))
+        self.assertTrue(self.solver.is_palindrome("a"))
 
     # def test_remove_duplicates(self):
     #     self.assertEqual(self.solver.remove_duplicates([1, 2, 2, 3, 1, 4]), [1, 2, 3, 4])

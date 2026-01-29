@@ -206,7 +206,7 @@ class ProblemSolver:
         Example:
             sum_of_squares([1, 2, 3]) -> 14 (1^2 + 2^2 + 3^2)
         """
-        pass
+        return sum(num**2 for num in numbers)
 
     # Advanced Questions
     def find_pairs_with_sum(self, numbers, target):

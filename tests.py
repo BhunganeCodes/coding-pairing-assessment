@@ -73,11 +73,11 @@ class TestProblemSolver(unittest.TestCase):
         self.assertEqual(self.solver.capitalize_words(""), "")
         self.assertEqual(self.solver.capitalize_words("a"), "A")
 
-    # def test_sum_of_squares(self):
-    #     self.assertEqual(self.solver.sum_of_squares([1, 2, 3]), 14)
-    #     self.assertEqual(self.solver.sum_of_squares([]), 0)
-    #     self.assertEqual(self.solver.sum_of_squares([2]), 4)
-    #     self.assertEqual(self.solver.sum_of_squares([-2, 3]), 13)
+    def test_sum_of_squares(self):
+        self.assertEqual(self.solver.sum_of_squares([1, 2, 3]), 14)
+        self.assertEqual(self.solver.sum_of_squares([]), 0)
+        self.assertEqual(self.solver.sum_of_squares([2]), 4)
+        self.assertEqual(self.solver.sum_of_squares([-2, 3]), 13)
 
 
     # def test_find_pairs_with_sum(self):

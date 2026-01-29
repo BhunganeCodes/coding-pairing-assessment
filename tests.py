@@ -110,11 +110,11 @@ class TestProblemSolver(unittest.TestCase):
     #     self.assertTrue(self.solver.is_valid_parentheses(""))
     #     self.assertFalse(self.solver.is_valid_parentheses("([)]"))
 
-    # def test_merge_sorted_lists(self):
-    #     self.assertEqual(self.solver.merge_sorted_lists([1, 3, 5], [2, 4, 6]), [1, 2, 3, 4, 5, 6])
-    #     self.assertEqual(self.solver.merge_sorted_lists([], [1, 2]), [1, 2])
-    #     self.assertEqual(self.solver.merge_sorted_lists([1], []), [1])
-    #     self.assertEqual(self.solver.merge_sorted_lists([], []), [])
+    def test_merge_sorted_lists(self):
+        self.assertEqual(self.solver.merge_sorted_lists([1, 3, 5], [2, 4, 6]), [1, 2, 3, 4, 5, 6])
+        self.assertEqual(self.solver.merge_sorted_lists([], [1, 2]), [1, 2])
+        self.assertEqual(self.solver.merge_sorted_lists([1], []), [1])
+        self.assertEqual(self.solver.merge_sorted_lists([], []), [])
 
     # def test_fibonacci_up_to(self):
     #     self.assertEqual(self.solver.fibonacci_up_to(10), [0, 1, 1, 2, 3, 5, 8])

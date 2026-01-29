@@ -229,6 +229,7 @@ class ProblemSolver:
         """
         pass
 
+
     def max_subarray_sum(self, numbers):
         """
         Finds the maximum sum of a contiguous subarray.
@@ -349,16 +350,7 @@ class ProblemSolver:
         Example:
             fibonacci_up_to(10) -> [0, 1, 1, 2, 3, 5, 8]
         """
-        a, b = 0, 1
-        result = []
-
-        for i in range(n):
-            a, b = b, a+b
-            result.append(a)
-            result.append(b)
-            if b <= n:
-                break
-        return result
+        pass
 
 if __name__ == "__main__":
     print(ProblemSolver().sum_even_numbers([1, 2, 3, 4, 5, 6]))

@@ -175,7 +175,14 @@ class ProblemSolver:
         Example:
             factorial(5) -> 120
         """
-        pass
+        if n < 0:
+            raise ValueError
+
+        factor = 1
+
+        for i in range(1, n+1):
+            factor *= i
+        return factor
 
     def capitalize_words(self, sentence):
         """

@@ -60,12 +60,12 @@ class TestProblemSolver(unittest.TestCase):
         self.assertEqual(self.solver.remove_duplicates([1, 1, 1]), [1])
         self.assertEqual(self.solver.remove_duplicates([1, 2, 3]), [1, 2, 3])
 
-    # def test_factorial(self):
-    #     self.assertEqual(self.solver.factorial(5), 120)
-    #     self.assertEqual(self.solver.factorial(0), 1)
-    #     self.assertEqual(self.solver.factorial(1), 1)
-    #     with self.assertRaises(ValueError):
-    #         self.solver.factorial(-1)
+    def test_factorial(self):
+        self.assertEqual(self.solver.factorial(5), 120)
+        self.assertEqual(self.solver.factorial(0), 1)
+        self.assertEqual(self.solver.factorial(1), 1)
+        with self.assertRaises(ValueError):
+            self.solver.factorial(-1)
 
     # def test_capitalize_words(self):
     #     self.assertEqual(self.solver.capitalize_words("hello world"), "Hello World")

@@ -209,7 +209,7 @@ class ProblemSolver:
         return sum(num**2 for num in numbers)
 
     # Advanced Questions
-    def find_pairs_with_sum(self, numbers, target):
+    def find_pairs_with_sum(self, numbers: list[int], target: int):
         """
         Returns a list of tuples, each containing indices of two numbers that sum to the target.
         Each number can only be used once.
@@ -227,7 +227,18 @@ class ProblemSolver:
         Example:
             find_pairs_with_sum([2, 7, 11, 15], 9) -> [(0, 1)]
         """
-        pass
+        res = []
+
+        for i in range(len(numbers)):
+            for j in range(1, len(numbers)):
+                if i == j:
+                    continue
+                if (i, j) in res or (j, i) in res:
+                    continue
+                if (numbers[i] + numbers[j]) == target:
+                    res.extend([(i, j)])
+                
+        return list(set(res))
 
 
     def max_subarray_sum(self, numbers):
@@ -353,4 +364,5 @@ class ProblemSolver:
         pass
 
 if __name__ == "__main__":
-    pass
+    solver = ProblemSolver()
+    print(solver.find_pairs_with_sum([1, 4, 3, 2, 5], 7))

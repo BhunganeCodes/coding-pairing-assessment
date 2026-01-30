@@ -80,17 +80,17 @@ class TestProblemSolver(unittest.TestCase):
         self.assertEqual(self.solver.sum_of_squares([-2, 3]), 13)
 
 
-    # def test_find_pairs_with_sum(self):
-    #     self.assertEqual(self.solver.find_pairs_with_sum([2, 7, 11, 15], 9), [(0, 1)])
-    #     self.assertEqual(self.solver.find_pairs_with_sum([1, 2, 3], 10), [])
-    #     result = self.solver.find_pairs_with_sum([1, 4, 3, 2, 5], 7)
-    #     self.assertEqual(len(result), 2)
-    #     flat_indices = [i for pair in result for i in pair]
-    #     self.assertEqual(len(set(flat_indices)), 4)
-    #     nums = [1, 4, 3, 2, 5]
-    #     for i, j in result:
-    #         self.assertEqual(nums[i] + nums[j], 7)
-    #     self.assertEqual(self.solver.find_pairs_with_sum([], 5), [])
+    def test_find_pairs_with_sum(self):
+        self.assertEqual(self.solver.find_pairs_with_sum([2, 7, 11, 15], 9), [(0, 1)])
+        self.assertEqual(self.solver.find_pairs_with_sum([1, 2, 3], 10), [])
+        result = self.solver.find_pairs_with_sum([1, 4, 3, 2, 5], 7)
+        self.assertEqual(len(result), 2)
+        flat_indices = [i for pair in result for i in pair]
+        self.assertEqual(len(set(flat_indices)), 4)
+        nums = [1, 4, 3, 2, 5]
+        for i, j in result:
+            self.assertEqual(nums[i] + nums[j], 7)
+        self.assertEqual(self.solver.find_pairs_with_sum([], 5), [])
 
     # def test_max_subarray_sum(self):
     #     self.assertEqual(self.solver.max_subarray_sum([-2, 1, -3, 4, -1, 2, 1, -5, 4]), 6)

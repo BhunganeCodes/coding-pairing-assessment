@@ -116,11 +116,11 @@ class TestProblemSolver(unittest.TestCase):
         self.assertEqual(self.solver.merge_sorted_lists([1], []), [1])
         self.assertEqual(self.solver.merge_sorted_lists([], []), [])
 
-    # def test_fibonacci_up_to(self):
-    #     self.assertEqual(self.solver.fibonacci_up_to(10), [0, 1, 1, 2, 3, 5, 8])
-    #     self.assertEqual(self.solver.fibonacci_up_to(1), [0, 1, 1])
-    #     self.assertEqual(self.solver.fibonacci_up_to(0), [0])
-    #     self.assertEqual(self.solver.fibonacci_up_to(-1), [])
+    def test_fibonacci_up_to(self):
+        self.assertEqual(self.solver.fibonacci_up_to(10), [0, 1, 1, 2, 3, 5, 8])
+        self.assertEqual(self.solver.fibonacci_up_to(1), [0, 1, 1])
+        self.assertEqual(self.solver.fibonacci_up_to(0), [0])
+        self.assertEqual(self.solver.fibonacci_up_to(-1), [])
 
 if __name__ == "__main__":
     unittest.main()

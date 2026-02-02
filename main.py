@@ -375,3 +375,4 @@ class ProblemSolver:
 if __name__ == "__main__":
     solver = ProblemSolver()
     print(solver.find_pairs_with_sum([1, 4, 3, 2, 5], 7))
+

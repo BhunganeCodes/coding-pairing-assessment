@@ -274,7 +274,11 @@ class ProblemSolver:
         Example:
             rotate_list([1, 2, 3, 4, 5], 2) -> [4, 5, 1, 2, 3]
         """
-        pass
+        if not numbers:
+            return []
+        for i in range(k):
+            numbers.insert(0, numbers.pop())
+        return numbers
 
     def is_valid_parentheses(self, s):
         """
@@ -361,15 +365,7 @@ class ProblemSolver:
         Example:
             fibonacci_up_to(10) -> [0, 1, 1, 2, 3, 5, 8]
         """
-        fib = [0, 1]
-        if n < 0:
-            return []
-        for i in range(2, n + 1):
-            num = fib[i - 2] + fib[i - 1]
-            if num > n:
-                break
-            fib.append(num)
-        return fib[:n+1]
+        pass
 
 
 if __name__ == "__main__":

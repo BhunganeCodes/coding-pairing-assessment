@@ -276,7 +276,8 @@ class ProblemSolver:
         """
         if not numbers:
             return []
-        for i in range(k):
+        rotations = k % len(numbers)
+        for _ in range(rotations):
             numbers.insert(0, numbers.pop())
         return numbers
 
